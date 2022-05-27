@@ -3,7 +3,7 @@
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-load=1.0">
    <link rel="stylesheet" href="style.css">
    <link rel="icon" href="img/favicon.png">
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,176 +12,183 @@
    <title>Elena Tropanets</title>
 </head>
 <body>
-   <div class="wrapper">
-      <header class="header" id="home">
-         <div class="header__container">
-
-            <div class="header__menu menu">
-               <nav class="menu__nav">
-                  <ul class="menu__list">
-                     <li class="menu__item"><a href="#home" class="menu__link">Home</a></li>
-                     <li class="menu__item"><a href="#about" class="menu__link">About me</a></li>
-                     <li class="menu__item"><a href="#skills" class="menu__link">Skills</a></li>
-                     <li class="menu__item"><a href="#portfolio" class="menu__link">Portfolio</a></li>
-                     <li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
+   <div class="wrapper-border">
+      <div class="wrapper">
+         <header class="header" id="home">
+            <div class="header__container">
+               <div class="header__menu menu">
+                  <nav class="menu__nav">
+                     <input type="checkbox" id="burger" class="hidden">
+                     <label for="burger" class="burger">
+                        <span></span>
+                     </label>
+                     <ul class="menu__list">
+                        <li class="menu__item"><a href="#home" class="menu__link">Home</a></li>
+                        <li class="menu__item"><a href="#about" class="menu__link">About me</a></li>
+                        <li class="menu__item"><a href="#skills" class="menu__link">Skills</a></li>
+                        <li class="menu__item"><a href="#portfolio" class="menu__link">Portfolio</a></li>
+                        <li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
+                     </ul>
+                  </nav>
+               </div>
+               <div class="header__hero">
+                  <div class="header__col">
+                     <div class="header__title title">
+                        <h1>Hello I'm Elena Tropanets</h1>
+                     </div>
+                     <div class="header__text">
+                        <p>I'm a junior front-end developer based in Ukraine.</p>
+                     </div>
+                     <ul class="header__links links">
+                        <li class="links__item"><a class="links__text" href="https://github.com/elenatrr" target="_blank" title="GitHub">GH</a></li>
+                        <li class="links__item"><a class="links__text" href="https://www.instagram.com/elena.trr/" target="_blank" title="Instagram">IG</a></li>
+                        <li class="links__item"><a class="links__text" href="https://www.linkedin.com/in/elena-tropanets-b7765315a/" target="_blank" title="LinkedIn">LI</a></li>
+                        <li class="links__item"><a class="links__text" href="https://t.me/elenatrr" target="_blank" title="Telegram">TG</a></li>
+                        <li class="links__item"><a class="links__text" href="" target="_blank" title="My CV">CV</a></li>
+                     </ul>
+                  </div>
+                  <div class="header__image image" style="background-image: url(img/hero.png);">
+                  </div>
+               </div>
+            </div>
+         </header>
+         <main class="main">
+            <div class="main__container">
+               <section class="about" id="about">
+                  <div class="about__title subtitle">
+                     <h3>About Me</h3>
+                  </div>
+                  <div class="about__body">
+                     <div class="about__box1 box">
+                        <div class="box__image-container">
+                           <div class="box__image image" style="background-image: url(img/about1.png);">
+                           </div>
+                        </div>
+                        <div class="box__text">
+                           <p>It's me eating a cake at my 5th b-day. Or maybe I shoud have started that story a bit closer to nowadays...</p>
+                        </div>
+                     </div>
+                     <div class="about__box2 box">
+                        <div class="box__image-container">
+                           <div class="box__image image" style="background-image: url(img/about2.png);">
+                           </div>
+                        </div>
+                        <div class="box__text">
+                           <p>...I have spent the last six month studying hard HTML, CSS and JavaScript. Right now I'm a student at A-Level Academy, where I have made several web pages. I'm truly passionate about it.</p>
+                        </div>
+                     </div>
+                     <div class="about__box3 box">
+                        <div class="box__image-container">
+                           <div class="box__image image" style="background-image: url(img/about3.png);">
+                           </div>
+                        </div>
+                        <div class="box__text">
+                           <p>Today I feel I'm ready for a more challenging assignment. I really want to join the enthusiastic team with wonderful people to create new ideas, exchange gained experience and share delicious cakes, of course!</p>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <section class="skills" id="skills">
+                  <div class="skills__title subtitle">
+                     <h3>Skills</h3>
+                  </div>
+                  <div class="skills__body">
+                     <div class="skills__block block">
+                        <div class="block__skill">
+                           <div class="block__load" style="width: 75%;"></div>
+                        </div>
+                        <div class="block__name"><span>HTML</span></div>
+                     </div>
+                     <div class="skills__block block">
+                        <div class="block__skill">
+                           <div class="block__load" style="width: 75%;"></div>
+                        </div>
+                        <div class="block__name"><span>CSS</span></div>
+                     </div>
+                     <div class="skills__block block">
+                        <div class="block__skill">
+                           <div class="block__load" style="width: 50%;"></div>
+                        </div>
+                        <div class="block__name"><span>JavaScript</span></div>
+                     </div>
+                     <div class="skills__block block">
+                        <div class="block__skill">
+                           <div class="block__load" style="width: 60%;"></div>
+                        </div>
+                        <div class="block__name"><span>FIGMA</span></div>
+                     </div>
+                     <div class="skills__block block">
+                        <div class="block__skill">
+                           <div class="block__load" style="width: 45%;"></div>
+                        </div>
+                        <div class="block__name"><span>GITHUB</span></div>
+                     </div>
+                  </div>
+               </section>
+               <section class="portfolio" id="portfolio">
+                  <div class="portfolio__title subtitle">
+                     <h3>Portfolio</h3>
+                  </div>
+                  <div class="portfolio__row">
+                     <a href="https://elenatrr.github.io/gocorona/" class="portfolio__box1 web" target="_blank">
+                        <img src="img/web1.jpg" alt="WebPage" width="280" height="280">
+                        <div class="web__button">
+                           <span class="web__text">view project</span>
+                        </div>
+                     </a>
+                     <a href="https://elenatrr.github.io/module_portfolio/" class="portfolio__box2 web" target="_blank">
+                        <img src="img/web2.jpg" alt="WebPage" width="280" height="280">
+                        <div class="web__button">
+                           <span class="web__text">view project</span>
+                        </div>
+                     </a>
+                     <div class="portfolio__box3 web">
+                        <img src="img/web5.png" alt="WebPage" width="280" height="280">
+                        <div class="web__button">
+                           <span class="web__text">coming soon</span>
+                        </div>
+                     </div>
+                     <div class="portfolio__box4 web">
+                        <img src="img/web5.png" alt="WebPage" width="280" height="280">
+                        <div class="web__button">
+                           <span class="web__text">coming soon</span>
+                        </div>
+                     </div>
+                     <div class="portfolio__box5 web">
+                        <img src="img/web5.png" alt="WebPage" width="280" height="280">
+                        <div class="web__button">
+                           <span class="web__text">coming soon</span>
+                        </div>
+                     </div>
+                     <div class="portfolio__box6 web">
+                        <img src="img/web5.png" alt="WebPage" width="280" height="280">
+                        <div class="web__button">
+                           <span class="web__text">coming soon</span>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+            </div>
+         </main>
+         <footer class="footer" id="contact">
+            <div class="footer__container">
+               <div class="footer__title title">
+                  <h2>Get in Touch</h2>
+               </div>
+               <div class="footer__body">
+                  <div class="footer__text">
+                     <p>Want to work together or have any questions?</p>
+                  </div>
+                  <a href="mailto: elenatropanets@gmail.com" class="footer__button"><span>Say Hello 👋</span></a>
+                  <ul class="footer__links links">
+                     <li class="links__item"><a class="links__text" href="https://github.com/elenatrr" target="_blank" title="GitHub">GitHub</a></li>
+                     <li class="links__item"><a class="links__text" href="https://www.linkedin.com/in/elena-tropanets-b7765315a/" target="_blank" title="LinkedIn">LinkedIn</a></li>
+                     <li class="links__item"><a class="links__text" href="https://drive.google.com/file/d/11CD8iuj8Kt1Pnk81aXiNYPjz1I4bPKVn/view?usp=sharing" target="_blank" title="My CV">My CV</a></li>
                   </ul>
-               </nav>
-               <div class="menu__icon">
-                  <span class="line1"></span>
-                  <span class="line2"></span>
-                  <span class="line3"></span>
                </div>
             </div>
-
-
-            <div class="header__hero">
-               <div class="header__text">
-                  <h2 class="header__title title">Hello I'm Elena Tropanets</h2>
-                  <p class="header__info">I'm a junior frontend developer based in Ukraine.</p>
-                  <ul class="header__links links">
-                     <li class="links__item"><a class="links__text" href="https://github.com/elenatrr" target="_blank" title="GitHub">GH</a></li>
-                     <li class="links__item"><a class="links__text" href="https://www.instagram.com/elena.trr/" target="_blank" title="Instagram">IG</a></li>
-                     <li class="links__item"><a class="links__text" href="https://www.linkedin.com/in/elena-tropanets-b7765315a/" target="_blank" title="LinkedIn">LI</a></li>
-                     <li class="links__item"><a class="links__text" href="https://t.me/elenatrr" target="_blank" title="Telegram">TG</a></li>
-                     <li class="links__item"><a class="links__text" href="" target="_blank" title="My CV">CV</a></li>
-                  </ul>
-               </div>
-               <div class="header__image">
-                  <img class="image" src="img/hero.png" alt="My Photo" width="400" height="400">
-               </div>
-            </div>
-         </div>
-      </header>
-      <main class="main">
-         <div class="main__container">
-            <section class="about" id="about">
-               <h3 class="about__title subtitle">About Me</h3>
-               <div class="about__body">
-                  <div class="about__box1 box">
-                     <div class="box__image-container">
-                        <div class="box__image">
-                           <img class="image" src="img/about1.png" alt="Me eating a cake" width="200" height="200">
-                        </div>
-                     </div>
-                     <div class="box__text">
-                        <p>It's me eating a cake at my 5th b-day. Or maybe I shoud have started that story a bit closer to nowadays...</p>
-                     </div>
-                  </div>
-                  <div class="about__box2 box">
-                     <div class="box__image-container">
-                        <div class="box__image">
-                           <img class="image" src="img/about2.png" alt="Me studying hard" width="200" height="200">
-                        </div>
-                     </div>
-                     <div class="box__text">
-                        <p>...I have spent the last six month studying hard HTML, CSS and JavaScript. Right now I'm a student at A-Level Academy, where I have made several web pages. I'm truly passionate about it.</p>
-                     </div>
-                  </div>
-                  <div class="about__box3 box">
-                     <div class="box__image-container">
-                        <div class="box__image">
-                           <img class="image" src="img/about3.png" alt="Me travelling" width="200" height="200">
-                        </div>
-                     </div>
-                     <div class="box__text">
-                        <p>Today I feel I'm ready for a more challenging assignment. I really want to join the enthusiastic team with wonderful people to create new ideas, exchange gained experience and share delicious cakes, of course!</p>
-                     </div>
-                  </div>
-               </div>
-            </section>
-            <section class="skills" id="skills">
-               <h3 class="skills__title subtitle">Skills</h3>
-               <div class="skills__body">
-                  <div class="skills__block1 block">
-                     <div class="block__parent">
-                        <div class="block__scale"></div>
-                     </div>
-                     <div class="block__name">HTML</div>
-                  </div>
-                  <div class="skills__block2 block">
-                     <div class="block__parent">
-                        <div class="block__scale"></div>
-                     </div>
-                     <div class="block__name">CSS</div>
-                  </div>
-                  <div class="skills__block3 block">
-                     <div class="block__parent">
-                        <div class="block__scale"></div>
-                     </div>
-                     <div class="block__name">JavaScript</div>
-                  </div>
-                  <div class="skills__block4 block">
-                     <div class="block__parent">
-                        <div class="block__scale"></div>
-                     </div>
-                     <div class="block__name">FIGMA</div>
-                  </div>
-                  <div class="skills__block5 block">
-                     <div class="block__parent">
-                        <div class="block__scale"></div>
-                     </div>
-                     <div class="block__name">GITHUB</div>
-                  </div>
-               </div>
-            </section>
-            <section class="portfolio" id="portfolio">
-               <h3 class="portfolio__title subtitle">Portfolio</h3>
-               <div class="portfolio__body">
-                  <a href="https://elenatrr.github.io/gocorona/" class="portfolio__box1 web" target="_blank">
-                     <img src="img/web1.png" alt="WebPage" width="280">
-                     <div class="web__button">
-                        <span class="web__text">view project</span>
-                     </div>
-                  </a>
-                  <a href="https://elenatrr.github.io/photoproject/" class="portfolio__box2 web" target="_blank">
-                     <img src="img/web2.png" alt="WebPage" width="280" height="280">
-                     <div class="web__button">
-                        <span class="web__text">view project</span>
-                     </div>
-                  </a>
-                  <div class="portfolio__box3 web">
-                     <img src="img/web3.png" alt="WebPage" width="280" height="280">
-                     <div class="web__button">
-                        <span class="web__text">coming soon</span>
-                     </div>
-                  </div>
-                  <div class="portfolio__box4 web">
-                     <img src="img/web4.png" alt="WebPage" width="280" height="280">
-                     <div class="web__button">
-                        <span class="web__text">coming soon</span>
-                     </div>
-                  </div>
-                  <div class="portfolio__box5 web">
-                     <img src="img/web5.png" alt="WebPage" width="280" height="280">
-                     <div class="web__button">
-                        <span class="web__text">coming soon</span>
-                     </div>
-                  </div>
-                  <div class="portfolio__box6 web">
-                     <img src="img/web6.png" alt="WebPage" width="280" height="280">
-                     <div class="web__button">
-                        <span class="web__text">coming soon</span>
-                     </div>
-                  </div>
-               </div>
-            </section>
-         </div>
-      </main>
-      <footer class="footer" id="contact">
-         <div class="footer__container">
-            <h2 class="footer__title title">Get in Touch</h2>
-            <div class="footer__body">
-               <h4 class="footer__subtitle">Want to work together or have any questions?</h4>
-               <a href="mailto: elenatropanets@gmail.com" class="footer__button"><span>Say Hello 👋</span></a>
-               <ul class="footer__links links">
-                  <li class="links__item"><a class="links__text" href="https://github.com/elenatrr" target="_blank" title="GitHub">GitHub</a></li>
-                  <li class="links__item"><a class="links__text" href="https://www.linkedin.com/in/elena-tropanets-b7765315a/" target="_blank" title="LinkedIn">LinkedIn</a></li>
-                  <li class="links__item"><a class="links__text" href="" target="_blank" title="My CV">My CV</a></li>
-               </ul>
-            </div>
-         </div>
-      </footer>
+         </footer>
+      </div>
    </div>
-   <script src="script.js"></script>
 </body>
 </html>
