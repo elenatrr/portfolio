@@ -273,7 +273,7 @@ a {
    flex: 0 0 380px;
    height: 380px;
    width: 380px;
-   background-size: auto;
+   background-size: cover;
    background-repeat: no-repeat;
 }
 @media (max-width: 991.98px) {
